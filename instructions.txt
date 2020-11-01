@@ -1,0 +1,12 @@
+Crop Data | Angular Frontend
+----------------------------------
+System Reqs : Git, Node.js, Angular
+Clone the Git repo and proceed with the following steps.
+
+1. Install dependencies
+Run the following command from the project root directory.
+>> npm install
+
+2. Serve content
+Run the Angular app on its default 4200 port (important)
+>> ng serve --port 4200

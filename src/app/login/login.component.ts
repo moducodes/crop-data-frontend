@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   loginRequest:any;
   loginResponse:any;
 
-  constructor(public dialog: MatDialog, private http:HttpClient, private route:Router) { }
+  constructor(public dialog: MatDialog, private http: HttpClient, private route:Router) { }
 
   ngOnInit() {
 

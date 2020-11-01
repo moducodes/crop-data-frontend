@@ -24,7 +24,11 @@ export class CropListComponent implements OnInit {
     const headers = new HttpHeaders({'Authorization': val});
 
     this.http.get<ICrop[]>('http://127.0.0.1:8000/crops/list/', {headers}).subscribe(
-      data=>this.crops_data=data
+      data=>{this.crops_data=data},
+      error=>{
+        console.log(error);
+        this.route.navigateByUrl('/');
+      }
     )
   }
 
